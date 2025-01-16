@@ -53,7 +53,7 @@ const schools = [
   { name: "SMA BINAUL UMMAH", type: "SMA" },
   { name: "SMA IT AN-NUR DUKUH DALEM", type: "SMA" },
   { name: "MAN 1 KUNINGAN", type: "MA" },
-  { name: "MAN 2 KUNINGAB", type: "MA" },
+  { name: "MAN 2 KUNINGAN", type: "MA" },
   { name: "MAN 3 KUNINGAN", type: "MA" },
   { name: "MA KHUSNUL KHOTIMAH", type: "MA" },
   { name: "MA PEMBANGUNAN MANDIRANCAN", type: "MA" },
