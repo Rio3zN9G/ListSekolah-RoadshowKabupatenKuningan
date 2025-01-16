@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadshow Sekolah - Kabupaten Kuningan</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <header class="bg-white shadow-md rounded-lg p-4 flex items-center justify-between mb-6">
+      <div>
+        <h1 class="text-2xl font-bold text-gray-700">List Sekolah & Roadshow</h1>
+        <p class="text-gray-500">Kabupaten Kuningan - Forum OSIS Jawa Barat Wilayah 10</p>
+      </div>
+      <img src="kuningan.png" alt="Logo" class="h-12 w-12">
+    </header>
+
+    <!-- Search and Filter -->
+    <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-4 mb-4">
+      <input
+        id="search"
+        type="text"
+        placeholder="Cari sekolah..."
+        class="border border-gray-300 rounded-lg p-2 w-1/2 focus:ring focus:ring-blue-300"
+      />
+      <select id="filter" class="border border-gray-300 rounded-lg p-2 focus:ring focus:ring-blue-300">
+        <option value="all">Semua Jenis</option>
+        <option value="SMK">SMK</option>
+        <option value="SMA">SMA</option>
+        <option value="MA">MA</option>
+      </select>
+    </div>
+
+    <!-- Data Table -->
+    <div class="bg-white shadow-md rounded-lg overflow-x-auto">
+      <table class="w-full table-auto">
+        <thead class="bg-blue-500 text-white">
+          <tr>
+            <th class="p-4">No</th>
+            <th class="p-4">Nama Sekolah</th>
+            <th class="p-4">Jenis Sekolah</th>
+            <th class="p-4">Status Roadshow</th>
+            <th class="p-4">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="school-list" class="divide-y divide-gray-200">
+          <!-- Data akan diisi melalui JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-6 text-right text-gray-500">
+      <p id="total-data">Total data: 0 sekolah</p>
+    </footer>
+  </div>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
